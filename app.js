@@ -18,7 +18,7 @@ const io = new Server(server, {
     origin: [
       'http://localhost:3000',
       'https://open-chat-v1.vercel.app',
-      'https://mylocalhost.loca.lt',
+      'https://open-chat-backend-production.up.railway.app',
     ],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization', 'bypass-tunnel-reminder'],  
@@ -32,7 +32,7 @@ app.use(
     origin: [
       'http://localhost:3000',
       'https://open-chat-v1.vercel.app',
-      'https://mylocalhost.loca.lt',
+      'https://open-chat-backend-production.up.railway.app/',
     ],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Authorization', 'Content-Type', 'bypass-tunnel-reminder'],
