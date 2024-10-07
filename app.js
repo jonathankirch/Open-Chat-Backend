@@ -3,6 +3,7 @@ const connectDB = require('./src/db/database')
 const cors = require('cors')
 const http = require('http')
 const { Server } = require('socket.io')
+const helmet = require('helmet')
 
 const app = express()
 const server = http.createServer(app)
@@ -39,6 +40,7 @@ app.use(
   })
 )
 app.use(express.json())
+app.use(helmet())
 
 connectDB()
 
