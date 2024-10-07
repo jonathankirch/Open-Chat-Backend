@@ -32,7 +32,7 @@ app.use(
     origin: [
       'http://localhost:3000',
       'https://open-chat-v1.vercel.app',
-      'https://open-chat-backend-production.up.railway.app/',
+      'https://open-chat-backend-production.up.railway.app',
     ],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Authorization', 'Content-Type', 'bypass-tunnel-reminder'],
